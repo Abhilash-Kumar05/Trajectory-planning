@@ -1,0 +1,766 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- This URDF was automatically created by SolidWorks to URDF Exporter! Originally created by Stephen Brawner (brawner@gmail.com) 
+     Commit Version: 1.6.0-4-g7f85cfe  Build Version: 1.6.7995.38578
+     For more information, please see http://wiki.ros.org/sw_urdf_exporter -->
+<robot
+  name="Robot_URDF_Ground_Plane_Ref">
+  <link
+    name="Base_Link">
+    <inertial>
+      <origin
+        xyz="0.024664 8.4262E-05 0.10682"
+        rpy="0 0 0" />
+      <mass
+        value="1.5698" />
+      <inertia
+        ixx="0.0043238"
+        ixy="-1.3145E-05"
+        ixz="-1.4247E-06"
+        iyy="0.0063945"
+        iyz="-1.5198E-08"
+        izz="0.009541" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Base_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Base_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <link
+    name="RWB_Link">
+    <inertial>
+      <origin
+        xyz="-1.0854E-05 4.786E-05 -0.017971"
+        rpy="0 0 0" />
+      <mass
+        value="0.1238" />
+      <inertia
+        ixx="2.3671E-05"
+        ixy="-1.0781E-10"
+        ixz="2.2822E-12"
+        iyy="2.3671E-05"
+        iyz="8.6489E-13"
+        izz="3.1205E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/RWB_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/RWB_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RWB_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.11841 -0.17729 0.040051"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="RWB_Link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="LWB_Link">
+    <inertial>
+      <origin
+        xyz="-1.5235E-05 -4.665E-05 -0.017971"
+        rpy="0 0 0" />
+      <mass
+        value="0.1238" />
+      <inertia
+        ixx="2.3671E-05"
+        ixy="1.1724E-10"
+        ixz="-2.4392E-12"
+        iyy="2.3671E-05"
+        iyz="4.4487E-13"
+        izz="3.1205E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/LWB_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/LWB_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LWB_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.11853 0.17731 0.040017"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="LWB_Link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="RWF_Link">
+    <inertial>
+      <origin
+        xyz="-1.7046E-05 3.7649E-05 -0.017971"
+        rpy="0 0 0" />
+      <mass
+        value="0.1238" />
+      <inertia
+        ixx="2.3671E-05"
+        ixy="-2.1807E-10"
+        ixz="-6.0488E-09"
+        iyy="2.3671E-05"
+        iyz="1.6773E-12"
+        izz="3.1205E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/RWF_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/RWF_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="RWF_Joint"
+    type="continuous">
+    <origin
+      xyz="0.11722 -0.1773 0.040068"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="RWF_Link" />
+    <axis
+      xyz="0.00080311 0 -1" />
+  </joint>
+  <link
+    name="LWF_Link">
+    <inertial>
+      <origin
+        xyz="4.65447904862692E-05 -3.71100962329729E-05 -0.0179706224399743"
+        rpy="0 0 0" />
+      <mass
+        value="0.123795234158923" />
+      <inertia
+        ixx="2.36710972053982E-05"
+        ixy="-2.18762080533464E-10"
+        ixz="-6.05208234517939E-09"
+        iyy="2.36711259194826E-05"
+        iyz="-2.05585925757485E-12"
+        izz="3.12049265170306E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/LWF_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.792156862745098 0.819607843137255 0.933333333333333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/LWF_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="LWF_Joint"
+    type="continuous">
+    <origin
+      xyz="0.11717 0.17732 0.040069"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="LWF_Link" />
+    <axis
+      xyz="0.00080311 0 -1" />
+  </joint>
+  <link
+    name="Lidar_Link">
+    <inertial>
+      <origin
+        xyz="0.010634 -0.0016626 -0.018432"
+        rpy="0 0 0" />
+      <mass
+        value="0.073082" />
+      <inertia
+        ixx="1.958E-05"
+        ixy="-1.0772E-07"
+        ixz="-4.2836E-07"
+        iyy="2.4126E-05"
+        iyz="9.0428E-09"
+        izz="4.1419E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Lidar_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Lidar_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Lidar_Joint"
+    type="continuous">
+    <origin
+      xyz="-0.13133 0.0019148 0.27617"
+      rpy="0 0 0" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="Lidar_Link" />
+    <axis
+      xyz="0 0 -1" />
+  </joint>
+  <link
+    name="Right_Shoulder_Link">
+    <inertial>
+      <origin
+        xyz="0.00014994 0.0012103 0.0050026"
+        rpy="0 0 0" />
+      <mass
+        value="0.058649" />
+      <inertia
+        ixx="5.305E-05"
+        ixy="-1.8652E-06"
+        ixz="-5.6482E-08"
+        iyy="3.8225E-05"
+        iyz="-4.5593E-07"
+        izz="6.5749E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Right_Shoulder_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Right_Shoulder_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_Shoulder_Joint"
+    type="revolute">
+    <origin
+      xyz="0.11724 -0.13929 0.131"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="Right_Shoulder_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-1.57"
+      upper="0.436"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Right_Arm_Link">
+    <inertial>
+      <origin
+        xyz="0.052455 0.00081455 0.025104"
+        rpy="0 0 0" />
+      <mass
+        value="0.092069" />
+      <inertia
+        ixx="6.7717E-05"
+        ixy="-2.1015E-07"
+        ixz="1.0501E-05"
+        iyy="0.00014457"
+        iyz="7.1307E-08"
+        izz="0.0001037" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Right_Arm_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Right_Arm_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_Arm_Joint"
+    type="revolute">
+    <origin
+      xyz="-0.0039957 -0.032253 0.026"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Right_Shoulder_Link" />
+    <child
+      link="Right_Arm_Link" />
+    <axis
+      xyz="-0.12294 0 -0.99241" />
+    <limit
+      lower="-0.436"
+      upper="1.0472"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Right_Wrist_Link">
+    <inertial>
+      <origin
+        xyz="0.024028 0.034283 -0.031626"
+        rpy="0 0 0" />
+      <mass
+        value="0.077914" />
+      <inertia
+        ixx="0.00011759"
+        ixy="-1.6354E-05"
+        ixz="-1.3234E-06"
+        iyy="6.1242E-05"
+        iyz="-2.5194E-06"
+        izz="0.00010618" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Right_Wrist_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Right_Wrist_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_Wrist_Joint"
+    type="revolute">
+    <origin
+      xyz="0.099106 0.0014534 0.051708"
+      rpy="0 0 0" />
+    <parent
+      link="Right_Arm_Link" />
+    <child
+      link="Right_Wrist_Link" />
+    <axis
+      xyz="-0.12294 0 -0.99241" />
+    <limit
+      lower="-0.45"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Right_Gripper_Link">
+    <inertial>
+      <origin
+        xyz="0.00063323 0.0005163 -0.022403"
+        rpy="0 0 0" />
+      <mass
+        value="0.06849" />
+      <inertia
+        ixx="3.4471E-05"
+        ixy="2.2082E-06"
+        ixz="2.4008E-07"
+        iyy="1.6826E-05"
+        iyz="4.8017E-07"
+        izz="2.4953E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Right_Gripper_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Right_Gripper_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Right_Gripper_Joint"
+    type="fixed">
+    <origin
+      xyz="0.028242 0.11712 -0.036549"
+      rpy="-1.5669 0 0" />
+    <parent
+      link="Right_Wrist_Link" />
+    <child
+      link="Right_Gripper_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+  <link
+    name="Left_Shoulder_Link">
+    <inertial>
+      <origin
+        xyz="-0.00022366 0.0011989 0.0050026"
+        rpy="0 0 0" />
+      <mass
+        value="0.058649" />
+      <inertia
+        ixx="5.2767E-05"
+        ixy="2.756E-06"
+        ixz="8.4252E-08"
+        iyy="3.8508E-05"
+        iyz="-4.5163E-07"
+        izz="6.5749E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Left_Shoulder_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Left_Shoulder_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_Shoulder_Joint"
+    type="revolute">
+    <origin
+      xyz="0.11724 0.13931 0.131"
+      rpy="-1.5708 0 0" />
+    <parent
+      link="Base_Link" />
+    <child
+      link="Left_Shoulder_Link" />
+    <axis
+      xyz="0 0 -1" />
+    <limit
+      lower="-0.436"
+      upper="1.57"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left_Arm_Link">
+    <inertial>
+      <origin
+        xyz="0.042361 0.00088716 -0.03981"
+        rpy="0 0 0" />
+      <mass
+        value="0.092055" />
+      <inertia
+        ixx="6.5025E-05"
+        ixy="-2.518E-06"
+        ixz="1.7959E-06"
+        iyy="0.00014444"
+        iyz="3.1486E-07"
+        izz="0.00010642" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Left_Arm_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Left_Arm_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_Arm_Joint"
+    type="revolute">
+    <origin
+      xyz="0.0059601 -0.031949 0.026"
+      rpy="1.5708 0 0" />
+    <parent
+      link="Left_Shoulder_Link" />
+    <child
+      link="Left_Arm_Link" />
+    <axis
+      xyz="-0.18339 0 -0.98304" />
+    <limit
+      lower="-1.0472"
+      upper="0.436"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left_Wrist_Link">
+    <inertial>
+      <origin
+        xyz="0.021514 -0.033655 -0.040195"
+        rpy="0 0 0" />
+      <mass
+        value="0.077914" />
+      <inertia
+        ixx="0.00011663"
+        ixy="1.6045E-05"
+        ixz="-1.9842E-06"
+        iyy="6.198E-05"
+        iyz="-7.5833E-06"
+        izz="0.0001064" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Left_Wrist_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.79216 0.81961 0.93333 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Left_Wrist_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_Wrist_Joint"
+    type="revolute">
+    <origin
+      xyz="0.09047 0.001747 -0.016369"
+      rpy="0 0 0" />
+    <parent
+      link="Left_Arm_Link" />
+    <child
+      link="Left_Wrist_Link" />
+    <axis
+      xyz="-0.18339 0 -0.98304" />
+    <limit
+      lower="-1.57"
+      upper="0.45"
+      effort="0"
+      velocity="0" />
+  </joint>
+  <link
+    name="Left_Gripper_Link">
+    <inertial>
+      <origin
+        xyz="0.00029536 0.00051596 -0.02241"
+        rpy="0 0 0" />
+      <mass
+        value="0.06849" />
+      <inertia
+        ixx="3.4138E-05"
+        ixy="-3.2847E-06"
+        ixz="1.5225E-07"
+        iyy="1.7163E-05"
+        iyz="3.7811E-07"
+        izz="2.495E-05" />
+    </inertial>
+    <visual>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Left_Gripper_Link.STL" />
+      </geometry>
+      <material
+        name="">
+        <color
+          rgba="0.62745 0.62745 0.62745 1" />
+      </material>
+    </visual>
+    <collision>
+      <origin
+        xyz="0 0 0"
+        rpy="0 0 0" />
+      <geometry>
+        <mesh
+          filename="package://Robot_URDF_Ground_Plane_Ref/meshes/Left_Gripper_Link.STL" />
+      </geometry>
+    </collision>
+  </link>
+  <joint
+    name="Left_Gripper_joint"
+    type="fixed">
+    <origin
+      xyz="0.028835 -0.11636 -0.037118"
+      rpy="1.569 0 0" />
+    <parent
+      link="Left_Wrist_Link" />
+    <child
+      link="Left_Gripper_Link" />
+    <axis
+      xyz="0 0 0" />
+  </joint>
+</robot>
